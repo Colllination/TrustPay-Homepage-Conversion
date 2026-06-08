@@ -163,3 +163,258 @@ header {
     max-width: 650px;
 }
 
+.why-trustpay {
+    max-width: 1200px;
+    margin: 120px auto;
+    padding: 0 40px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.section-header h2 {
+    font-size: 52px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.section-header p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #666;
+}
+
+.features-container {
+    display: flex;
+    gap: 40px;
+}
+
+.feature-card {
+    flex: 1;
+    border-radius: 35px;
+    overflow: hidden;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.milestone-card {
+    background: linear-gradient(180deg, #4737ff, #3726ef);
+    color: #ffffff;
+}
+
+.feature-card h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.feature-card p {
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.security-card {
+    background: #efedf9;
+}
+
+.feature-card img {
+    width: 100%;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .platform-icons {
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 56px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .features-container {
+        flex-direction: column;
+    }
+
+    .section-header h2 {
+        font-size: 42px;
+    }
+
+    .feature-card {
+        padding: 30px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 20px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .platform-icons {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+}
