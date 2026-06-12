@@ -1,3 +1,14 @@
+:root {
+    --primary-color: #382ef4;
+    --secondary-color: #efedf9;
+    --text-color: #111111;
+    --background-color: #ffffff;
+    --accent-color: #3f3e3e;
+}
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,9 +16,9 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    background: #ffffff;
-    color: #111111;
+    font-family: 'Outfit' , sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 header {
@@ -47,19 +58,19 @@ header {
 
 .nav-links a {
     text-decoration: none;
-    color: #111111;
+    color: var(--text-color);
     font-size: 16px;
     font-weight: 500;
 
 }
 
 .nav-links .home-nav {
-    color: #4338ff;
+    color: var(--primary-color);
     font-weight: 600;
 }
 
 .nav-links a:hover {
-    color: #4338ff;
+    color: var(--primary-color);
 }
 
 .ath-buttons {
@@ -74,8 +85,8 @@ header {
 
 .login-btn {
     padding: 14px 30px;
-    background: #ece9ff;
-    color: #4338ff;
+    background: var(--secondary-color);
+    color: var(--primary-color);
     border: none;
     border-radius: 12px;
     cursor: pointer;
@@ -84,7 +95,7 @@ header {
 
 .signup-btn {
     padding: 14px 30px;
-    background: #4338ff;
+    background: var(--primary-color);
     color: #ffffff;
     border: none;
     border-radius: 12px;
@@ -108,19 +119,19 @@ header {
 }
 
 .hero-content h1 {
-    font-size: 50px;
+    font-size: 60px;
     line-height: 1.14;
     margin-bottom: 30px;
-    font-weight: 600;
+    font-weight: 700;
     max-width: 640px;
 }
 
 .hero-content p {
     max-width: 580px;
     font-size: 22px;
-    line-height: 1.8;
+    line-height: 1.5;
     margin-bottom: 40px;
-    color: #3f3e3e;
+    color: var(--accent-color);
 }
 
 .cta-btn {
@@ -131,8 +142,8 @@ header {
     font-weight: 600;
     cursor: pointer;
     margin-bottom: 80px;
-    color: #ffffff;
-    background-color: #4338ff;
+    color: var(--background-color);
+    background-color: var(--primary-color);
     font-family: "Titillium Web", sans-serif;
 
 }
@@ -202,7 +213,7 @@ header {
 }
 
 .milestone-card {
-    background: linear-gradient(180deg, #4737ff, #3726ef);
+    background: linear-gradient(180deg, var(--primary-color), #3726ef);
     color: #ffffff;
 }
 
@@ -212,18 +223,227 @@ header {
 }
 
 .feature-card p {
-    line-height: 1.8;
+    line-height: 1.5;
     margin-bottom: 40px;
 }
 
 .security-card {
-    background: #efedf9;
+    background: var(--secondary-color);
 }
 
 .feature-card img {
     width: 100%;
     display: block;
 }
+
+.powerful-features {
+    max-width: 1200px;
+    margin: 120px auto;
+    padding: 0 40px;
+}
+
+.powerful-features .section-header {
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.section-header h2 {
+    font-size: 54px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.section-header p {
+    max-width: 650px;
+    margin: auto;
+    color: var(--accent-color);
+    font-size: 20px;
+    line-height: 1.5;
+
+}
+
+.feature-row {
+    display: flex;
+    gap: 80px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 120px;
+
+}
+
+
+.feature-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    background: var(--primary-color);
+    border-radius: 30px;
+}
+
+.blue-bg {
+    background: var(--primary-color);
+    border-radius: 30px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-image img {
+    width: 80%;
+    max-width: 450px;
+    display: block;
+}
+
+.feature-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
+.feature-content h3 {
+    font-size: 40px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.feature-content p {
+    color: var(--accent-color);
+
+    line-height: 1.5;
+
+    margin-bottom: 35px;
+}
+
+.feature-btn {
+    background: var(--primary-color);
+    color: var(--background-color);
+    border: none;
+    padding: 16px 36px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    align-self: flex-end;
+}
+
+.feature-btn2 {
+    background: var(--primary-color);
+    color: var(--background-color);
+    border: none;
+    padding: 16px 36px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    align-self: flex-start;
+}
+
+.feature-btn:hover {
+    opacity: 0.9;
+}
+
+.manage-section {
+    padding: 100px 40px;
+}
+
+.manage-box {
+    max-width: 1700px;
+    margin: auto;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    background: var(--primary-color);
+    padding: 0px 70px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.manage-content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.manage-content h2 {
+    color: var(--background-color);
+    font-size: 50px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.manage-content p {
+    color: var(--background-color);
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.manage-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 45px;
+}
+
+.manage-list li {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 16px;
+    color: var(--background-color);
+    line-height: 1.5;
+}
+
+.check-icon {
+    width: 42px;
+    height: 42px;
+    background: var(--background-color);
+    color: var(--primary-color);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    flex-shrink: 0;
+    justify-content: center;
+}
+
+.manage-btn {
+    background: var(--background-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 18px 35px;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: -60px;
+    margin-top: -20px;
+}
+
+.manage-btn:hover {
+    transform: translateY(-2px);
+}
+
+.manage-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.manage-image img {
+    width: 250%;
+    max-width: none;
+    position: relative;
+    top: 0px;
+    right: -25px;
+}
+
 
 
 
