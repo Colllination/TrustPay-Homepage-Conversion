@@ -37,17 +37,24 @@ header {
 }
 
 
-.logo {
-    font-family: "menlo", sans-serif;
-    font-style: bold;
-    font-size: 30px;
-    font-weight: 600;
-    margin-bottom: 10px;
+.logo{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    cursor:pointer;
 }
-.logo img {
+
+.logo img{
     width: 30px;
-    cursor: pointer;
-    margin-top: 10px;
+    height:auto;
+    display:block;
+}
+
+.logo span{
+    font-size:30px;
+    font-weight:800;
+    color:#111111;
+    line-height:1;
 }
 
 .nav-links {
@@ -569,72 +576,271 @@ header {
 
 
 
-@media (max-width: 992px) {
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+    .navbar {
+        padding: 25px 30px;
+    }
+
+    .nav-links {
+        gap: 30px;
+    }
+
+    .auth-buttons {
+        display: flex;
+        gap: 10px;
+    }
+
+    .login-btn,
+    .signup-btn {
+        padding: 12px 22px;
+    }
+
 
     .hero {
         flex-direction: column;
         text-align: center;
+        padding: 60px 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 54px;
+        max-width: 700px;
+        margin: auto auto 30px;
     }
 
     .hero-content p {
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto 40px;
     }
 
     .platform-icons {
         justify-content: center;
+        flex-wrap: wrap;
     }
 
-    .hero-content h1 {
-        font-size: 56px;
+    .hero-image img {
+        max-width: 550px;
     }
-}
-
-
-@media (max-width: 768px) {
 
     .features-container {
         flex-direction: column;
     }
 
-    .section-header h2 {
-        font-size: 42px;
-    }
-
     .feature-card {
-        padding: 30px;
+        max-width: 800px;
+        margin: auto;
     }
 
+    .feature-row {
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .feature-content {
+        align-items: center;
+    }
+
+    .feature-content h3 {
+        font-size: 36px;
+    }
+
+    .feature-btn,
+    .feature-btn2 {
+        align-self: center;
+    }
+
+    .feature-image img {
+        width: 75%;
+    }
+
+    .manage-box {
+        flex-direction: column;
+        padding: 60px 40px;
+        text-align: center;
+    }
+
+    .manage-content {
+        max-width: 100%;
+    }
+
+    .manage-list li {
+        text-align: left;
+    }
+
+    .manage-btn {
+        margin: 20px auto 0;
+    }
+
+    .manage-image img {
+        width: 120%;
+        right: 0;
+        top: 0;
+    }
 }
 
-@media (max-width: 768px) {
+
+@media screen and (max-width: 768px) {
 
     .navbar {
         padding: 20px;
     }
 
-    .nav-links {
+    .nav-links,
+    .auth-buttons {
         display: none;
     }
 
+    .logo {
+        font-size: 26px;
+    }
+
     .hero {
-        padding: 40px 20px;
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px 70px;
     }
 
     .hero-content h1 {
-        font-size: 42px;
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    .trust-badge {
+        width: 150px;
     }
 
     .hero-content p {
         font-size: 18px;
     }
 
+    .cta-btn {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
     .platform-icons {
         flex-direction: column;
-        gap: 25px;
+        gap: 20px;
     }
 
     .hero-image img {
         max-width: 100%;
+    }
+
+    .section-header {
+        margin-bottom: 50px;
+    }
+
+    .section-header h2 {
+        font-size: 38px;
+    }
+
+    .section-header p {
+        font-size: 17px;
+    }
+
+    .why-trustpay {
+        padding: 0 20px;
+        margin: 80px auto;
+    }
+
+    .features-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .feature-card {
+        padding: 30px 25px;
+    }
+
+    .feature-card h3 {
+        font-size: 30px;
+    }
+
+    .feature-card p {
+        font-size: 16px;
+    }
+
+    .powerful-features {
+        padding: 0 20px;
+        margin: 80px auto;
+    }
+
+    .feature-row {
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 80px;
+    }
+
+    .feature-content {
+        text-align: center;
+        align-items: center;
+    }
+
+    .feature-content h3 {
+        font-size: 32px;
+    }
+
+    .feature-content p {
+        font-size: 16px;
+    }
+
+    .feature-btn,
+    .feature-btn2 {
+        align-self: center;
+        width: 100%;
+    }
+
+    .feature-image img {
+        width: 90%;
+    }
+
+    .manage-section {
+        padding: 80px 20px;
+    }
+
+    .manage-box {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 25px;
+        overflow: hidden;
+    }
+
+    .manage-content {
+        max-width: 100%;
+    }
+
+    .manage-content h2 {
+        font-size: 38px;
+    }
+
+    .manage-content p {
+        font-size: 16px;
+    }
+
+    .manage-list li {
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .manage-btn {
+        width: 100%;
+        margin: 25px auto 0;
+    }
+
+    .manage-image {
+        margin-top: 40px;
+    }
+
+    .manage-image img {
+        width: 100%;
+        right: -20px;
+        top: -20px;
     }
 }
