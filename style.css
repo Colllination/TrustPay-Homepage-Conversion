@@ -40,12 +40,12 @@ header {
 .logo{
     display:flex;
     align-items:center;
-    gap:14px;
+    gap:12px;
     cursor:pointer;
 }
 
 .logo img{
-    width: 30px;
+    width: 40px;
     height:auto;
     display:block;
 }
@@ -55,6 +55,7 @@ header {
     font-weight:800;
     color:#111111;
     line-height:1;
+    font-family: 'Bricolage Grotesque', sans-serif;
 }
 
 .nav-links {
@@ -87,7 +88,16 @@ header {
 
 
 .trust-badge {
-    width: 220px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    margin: 0 8px;
+}
+
+.trust-badge img {
+    width: 250px;
+    display: block;
 }
 
 .login-btn {
@@ -108,6 +118,18 @@ header {
     border-radius: 12px;
     cursor: pointer;
     font-weight: 600;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    display: none;
 }
 
 .hero {
@@ -694,6 +716,41 @@ header {
     .nav-links,
     .auth-buttons {
         display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .logo span {
+        font-size: 28px;
+    }
+
+    .logo img {
+        width: 42px;
+    }
+
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+
+        padding: 25px 20px;
+
+        background: white;
+
+        box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .mobile-menu a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .mobile-menu.show {
+        display: flex;
     }
 
     .logo {
