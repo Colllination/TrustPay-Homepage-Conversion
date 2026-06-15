@@ -624,6 +624,18 @@ header {
     }
 
 
+    .hero-content h1 {
+    font-size: 56px;
+}
+
+.trust-badge {
+    margin: 0 6px;
+}
+
+.trust-badge img {
+    width: 200px;
+}
+
     .hero {
         flex-direction: column;
         text-align: center;
@@ -763,14 +775,19 @@ header {
         padding: 40px 20px 70px;
     }
 
-    .hero-content h1 {
-        font-size: 40px;
-        line-height: 1.2;
-    }
+.hero-content h1 {
+    max-width: 100%;
+    font-size: 40px;
+    line-height: 1.2;
+}
 
-    .trust-badge {
-        width: 150px;
-    }
+.trust-badge {
+    margin: 0 4px;
+}
+
+.trust-badge img {
+    width: 140px;
+}
 
     .hero-content p {
         font-size: 18px;
