@@ -1,10 +1,11 @@
 :root {
-    --primary-color: #382ef4;
-    --secondary-color: #efedf9;
+    --primary-color: #362FF6;
+    --secondary-color: #d0cedf;
     --text-color: #111111;
     --background-color: #ffffff;
     --accent-color: #3f3e3e;
 }
+
 
 
 
@@ -16,7 +17,7 @@
 }
 
 body {
-    font-family: 'Outfit' , sans-serif;
+    font-family: 'Outfit', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
 }
@@ -37,24 +38,25 @@ header {
 }
 
 
-.logo{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    cursor:pointer;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
 }
 
-.logo img{
+.logo img {
     width: 40px;
-    height:auto;
-    display:block;
+    height: auto;
+    display: block;
 }
 
-.logo span{
-    font-size:30px;
-    font-weight:800;
-    color:#111111;
-    line-height:1;
+
+.logo span {
+    font-size: 30px;
+    font-weight: 800;
+    color: #111111;
+    line-height: 1;
     font-family: 'Bricolage Grotesque', sans-serif;
 }
 
@@ -79,6 +81,8 @@ header {
 
 .nav-links a:hover {
     color: var(--primary-color);
+    transition: 0.3s;
+    transform: translateY(-2px);
 }
 
 .ath-buttons {
@@ -108,6 +112,11 @@ header {
     border-radius: 12px;
     cursor: pointer;
     font-weight: 600;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    transform: translateY(-2px);
 }
 
 .signup-btn {
@@ -118,6 +127,11 @@ header {
     border-radius: 12px;
     cursor: pointer;
     font-weight: 600;
+    transition: 0.3s;
+}
+
+.signup-btn:hover {
+    transform: translateY(-2px);
 }
 
 .menu-toggle {
@@ -179,14 +193,14 @@ header {
 
 .cta-btn:hover {
     transform: translateY(-2px);
-    transition:  0.3s ease;
+    transition: 0.3s ease;
 }
 
 .platform-icons {
     display: flex;
     gap: 50px;
     align-items: center;
-}  
+}
 
 .platform-icons img {
     height: 30px;
@@ -205,7 +219,7 @@ header {
 
 .why-trustpay {
     max-width: 1200px;
-    margin: 120px auto;
+    margin: 40px auto;
     padding: 0 40px;
 }
 
@@ -356,6 +370,7 @@ header {
     font-weight: 600;
     position: relative;
     align-self: flex-end;
+    transition: 0.3s;
 }
 
 .feature-btn2 {
@@ -369,10 +384,17 @@ header {
     font-weight: 600;
     position: relative;
     align-self: flex-start;
+    transition: 0.3s;
 }
 
 .feature-btn:hover {
     opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.feature-btn2:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
 }
 
 .manage-section {
@@ -382,7 +404,7 @@ header {
 .manage-box {
     max-width: 1700px;
     margin: auto;
-    display: flex;  
+    display: flex;
     justify-content: space-between;
     align-items: center;
     background: var(--primary-color);
@@ -598,6 +620,302 @@ header {
 }
 
 
+.testimonials {
+    max-width: 1400px;
+    margin: 140px auto;
+    padding: 0 40px;
+}
+
+
+
+.testimonials .section-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.testimonials .section-header h2 {
+    font-size: 54px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.testimonials .section-header p {
+    max-width: 700px;
+    margin: auto;
+    color: #666;
+    line-height: 1.7;
+}
+
+.testimonial-cards {
+    display: flex;
+    gap: 30px;
+}
+
+.testimonial-card {
+    flex: 1;
+    background: var(--secondary-color);
+    border-radius: 28px;
+    padding: 33px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.quote-icon {
+    font-size: 80px;
+    color: var(--primary-color);
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.testimonial-text {
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 40px;
+}
+
+
+.testimonial-user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: auto;
+}
+
+
+.testimonial-user img {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+
+.testimonial-user h4 {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+
+.testimonial-user span {
+    color: var(--accent-color);
+    font-size: 14px;
+}
+
+
+.faq-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 40px;
+}
+
+
+.faq-container {
+    margin-top: 70px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 25px;
+    cursor: pointer;
+}
+
+
+.faq-question h3 {
+    font-size: 28px;
+    font-weight: 600;
+    max-width: 850px;
+}
+
+
+.faq-icon {
+    font-size: 40px;
+    font-weight: 300;
+    color: var(--text-color);
+}
+
+.faq-answer {
+    display: none;
+    padding: 0 25px 30px;
+    color: #666;
+    line-height: 1.8;
+}
+
+
+.faq-item.active {
+    background: var(--secondary-color);
+    border-radius: 25px;
+    border-bottom: none;
+}
+
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+
+.cta-section {
+    background: #04002b;
+    padding: 0 40px 120px;
+}
+
+.cta-box {
+    max-width: 1000px;
+    margin: auto;
+    background: var(--primary-color);
+    border-radius: 30px;
+    padding: 70px 60px;
+    text-align: center;
+}
+
+.cta-box h2 {
+    color: white;
+    font-size: 35px;
+    margin-bottom: 16px;
+}
+
+.cta-box p {
+    color: rgba(255, 255, 255, .8);
+    max-width: 700px;
+    margin: auto auto 40px;
+    line-height: 1.6;
+}
+
+.cta-form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.input-wrapper input {
+    width: 100%;
+    height: 60px;
+    padding: 0 100px 0 24px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 14px;
+    background: transparent;
+    color: white;
+    outline: none;
+}
+
+
+.input-wrapper input::placeholder {
+    color: var(--background-color);
+    font-size: 17px;
+}
+
+.input-wrapper button {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: white;
+    color: #111;
+    padding: 19px 24px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: "Outfit", sans-serif;
+}
+
+.footer {
+    background: #04002b;
+    padding: 50px 40px 80px;
+}
+
+.footer-card {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 50px;
+}
+
+
+.footer-bottom {
+    padding: 20px 50px;
+    border-top: 1px solid #e8e8e8;
+    display: flex;
+    gap: 16px;
+}
+
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links h4 {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #111;
+}
+
+.footer-contact {
+    text-align: right;
+}
+
+
+.footer-call-btn {
+    font-family: "Outlook", sans-serif;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-call-btn.cta-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+.footer-contact p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+.footer-bottom a {
+    width: 40px;
+    height: 40px;
+    background: #04002b;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
 
 
 
@@ -753,16 +1071,16 @@ header {
 
 
     .hero-content h1 {
-    font-size: 56px;
-}
+        font-size: 56px;
+    }
 
-.trust-badge {
-    margin: 0 6px;
-}
+    .trust-badge {
+        margin: 0 6px;
+    }
 
-.trust-badge img {
-    width: 200px;
-}
+    .trust-badge img {
+        width: 200px;
+    }
 
     .hero {
         flex-direction: column;
@@ -844,7 +1162,40 @@ header {
         right: 0;
         top: 0;
     }
+
+    .how-it-works {
+        padding: 0 25px;
+    }
+
+    .timeline-step {
+        gap: 30px;
+    }
+
+    .step-content h3 {
+        font-size: 30px;
+    }
+
+    .testimonials {
+        padding: 0 25px;
+    }
+
+    .testimonials .section-header h2 {
+        font-size: 44px;
+    }
+
+    .faq-section {
+        padding: 0 25px;
+    }
+
+    .faq-section .section-header h2 {
+        font-size: 44px;
+    }
+
+    .faq-item span:first-child {
+        font-size: 22px;
+    }
 }
+
 
 
 @media screen and (max-width: 768px) {
@@ -874,12 +1225,9 @@ header {
         display: none;
         flex-direction: column;
         gap: 20px;
-
         padding: 25px 20px;
-
         background: white;
-
-        box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     }
 
     .mobile-menu a {
@@ -903,19 +1251,19 @@ header {
         padding: 40px 20px 70px;
     }
 
-.hero-content h1 {
-    max-width: 100%;
-    font-size: 40px;
-    line-height: 1.2;
-}
+    .hero-content h1 {
+        max-width: 100%;
+        font-size: 40px;
+        line-height: 1.2;
+    }
 
-.trust-badge {
-    margin: 0 4px;
-}
+    .trust-badge {
+        margin: 0 4px;
+    }
 
-.trust-badge img {
-    width: 150px;
-}
+    .trust-badge img {
+        width: 150px;
+    }
 
     .hero-content p {
         font-size: 18px;
@@ -1044,5 +1392,98 @@ header {
         width: 100%;
         right: -20px;
         top: -20px;
+    }
+
+    .timeline::before {
+        display: none;
+    }
+
+    .timeline-step,
+    .timeline-step.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .step-number {
+        order: -1;
+    }
+
+    .step-image {
+        width: 100%;
+    }
+
+    .step-content h3 {
+        font-size: 28px;
+    }
+
+    .step-content p {
+        font-size: 16px;
+    }
+
+    .timeline-btn {
+        width: 100%;
+    }
+
+    .testimonial-cards {
+        flex-direction: column;
+    }
+
+    .testimonials .section-header h2 {
+        font-size: 34px;
+    }
+
+    .testimonial-card {
+        padding: 25px;
+    }
+
+    .quote-icon {
+        font-size: 60px;
+    }
+
+    .faq-section {
+        padding: 0 20px;
+    }
+
+    .faq-section .section-header h2 {
+        font-size: 34px;
+    }
+
+    .faq-item {
+        padding: 22px 20px;
+    }
+
+    .faq-item span:first-child {
+        font-size: 18px;
+        max-width: 85%;
+        line-height: 1.5;
+    }
+
+    .faq-icon {
+        font-size: 30px;
+    }
+
+    .cta-box {
+        padding: 50px 25px;
+    }
+
+    .cta-box h2 {
+        font-size: 34px;
+    }
+
+    .cta-form {
+        flex-direction: column;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-contact {
+        text-align: left;
+    }
+
+    .footer-bottom {
+        justify-content: center;
     }
 }
