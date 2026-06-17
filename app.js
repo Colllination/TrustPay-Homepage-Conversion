@@ -1,8 +1,22 @@
 const menuToggle = document.querySelector(".menu-toggle");
-const mobileMenu = document.querySelector(".mobile-menu");
+const navLinks = document.querySelector(".nav-links");
 
 menuToggle.addEventListener("click", () => {
-    mobileMenu.classList.toggle("show");
+
+    navLinks.classList.toggle("active");
+
+    if (navLinks.classList.contains("active")) {
+
+        menuToggle.textContent = "✕";
+
+    } else {
+
+        menuToggle.textContent = "☰";
+
+    }
+
+
+
 });
 
 
