@@ -1194,6 +1194,38 @@ header {
     .faq-item span:first-child {
         font-size: 22px;
     }
+
+    .cta-box {
+        padding: 60px 40px;
+    }
+
+    .cta-box h2 {
+        font-size: 42px;
+    }
+
+    .cta-box p {
+        font-size: 18px;
+    }
+
+    .cta-form {
+        max-width: 600px;
+    }
+
+    .input-wrapper input {
+        height: 56px;
+        padding: 0 180px 0 20px;
+        font-size: 16px;
+    }
+
+    .input-wrapper input::placeholder {
+        font-size: 15px;
+    }
+
+    .input-wrapper button {
+        padding: 15px 22px;
+        font-size: 15px;
+    }
+
 }
 
 
@@ -1453,25 +1485,54 @@ header {
     }
 
     .faq-item span:first-child {
-        font-size: 18px;
-        max-width: 85%;
+        font-size: 16px;
         line-height: 1.5;
+        max-width: 85%;
     }
 
     .faq-icon {
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .cta-box {
-        padding: 50px 25px;
+        padding: 40px 20px;
     }
 
     .cta-box h2 {
-        font-size: 34px;
+        font-size: 32px;
+        line-height: 1.3;
     }
 
-    .cta-form {
+    .cta-box p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .input-wrapper {
+        display: flex;
         flex-direction: column;
+        gap: 12px;
+    }
+
+    .input-wrapper input {
+        width: 100%;
+        height: 55px;
+        padding: 0 20px;
+        font-size: 15px;
+    }
+
+    .input-wrapper input::placeholder {
+        font-size: 14px;
+    }
+
+    .input-wrapper button {
+        position: static;
+        transform: none;
+
+        width: 100%;
+        padding: 16px;
+
+        font-size: 15px;
     }
 
     .footer-top {
@@ -1486,4 +1547,8 @@ header {
     .footer-bottom {
         justify-content: center;
     }
+
+
+
+
 }
