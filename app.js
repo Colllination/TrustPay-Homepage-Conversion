@@ -1,9 +1,11 @@
 const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
+const authButtons = document.querySelector(".auth-buttons")
 
 menuToggle.addEventListener("click", () => {
 
     navLinks.classList.toggle("active");
+    authButtons.classList.toggle("active")
 
     if (navLinks.classList.contains("active")) {
 

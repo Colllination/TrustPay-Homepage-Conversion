@@ -1233,29 +1233,51 @@ header {
 @media screen and (max-width: 768px) {
 
     .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
         padding: 20px;
     }
 
     .menu-toggle {
         display: block;
+        width: auto;
+        flex-shrink: 0;
     }
 
     .nav-links,
     .auth-buttons {
         display: none;
+        width: 100%;
     }
 
     .nav-links.active {
         display: flex;
         flex-direction: column;
-        position: absolute;
-        top: 90px;
-        left: 0;
-        width: 100%;
-        background: white;
-        padding: 30px;
         gap: 20px;
+        width: 100%;
+        padding: 20px 0;
+        order: 3;
         text-align: center;
+        align-items: flex-start;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        text-align: left;
+    }
+
+    .auth-buttons.active {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        padding-top: 20px;
+        flex-direction: column;
+        width: 100%;
+        order: 4;
     }
 
 
