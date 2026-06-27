@@ -1,0 +1,10 @@
+Proper HTML5 Semantics ✓
+ Proper Sections Styling for the layout structuring (CSS Grid, Flex-box) ✓
+ JavaScript (click event listeners for the Mobile Navbar menu-toggle and the FAQ section) ✓
+ CSS variables ✓
+ Custom TrustPay Homepage Design with Reference to the Figma Sample ✓
+ Proper Media Queries for Tab and Mobile phone screen resolutions ✓
+ Smooth Scrolling ✓
+ Multiple progressive commits to Main Repository ✓
+ Tested ✓
+ 

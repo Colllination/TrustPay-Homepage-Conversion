@@ -96,11 +96,15 @@ header {
     align-items: center;
     justify-content: center;
     vertical-align: middle;
-    margin: 0 8px;
+    margin: 2 8px;
+    background-color: #DEDEF2;
+    border-radius: 20px;
+    padding: 13px;
+    gap: 6px;
 }
 
 .trust-badge img {
-    width: 250px;
+    width: 60px;
     display: block;
 }
 
@@ -1330,7 +1334,7 @@ header {
     }
 
     .trust-badge img {
-        width: 150px;
+        width: 40px;
     }
 
     .hero-content p {
